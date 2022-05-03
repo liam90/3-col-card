@@ -1,0 +1,534 @@
+/* Built @ screen size 1440px (Large laptop) */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --bg-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Layout */
+body {
+  font-size: 15px;
+  background-color: var(--bg-headings-buttons);
+}
+
+.wrapper {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid thin var(--bg-headings-buttons);
+  border-radius: 9px;
+}
+.container {
+  display: flex;
+  width: 60%;
+  height: 600px;
+}
+
+.card {
+  width: 33.3333%;
+  height: 550px;
+  padding-left: 3rem;
+  padding-right: 1.5rem;
+}
+
+/* Base Style */
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2.3rem;
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--bg-headings-buttons);
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1rem;
+  color: var(--paragraph);
+  line-height: 1.6;
+  margin-bottom: 6rem;
+}
+
+a {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 27px;
+}
+
+/* Image sizing */
+.pic__size {
+  width: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Card Background Color */
+.sedan {
+  border-radius: 12px 0 0 12px;
+  background: var(--sedan);
+}
+
+.suvs {
+  background: var(--suv);
+}
+
+.luxury {
+  border-radius: 0 12px 12px 0;
+  background: var(--luxury);
+}
+
+/* Button */
+.sedan > a {
+  align-self: flex-end;
+  background-color: var(--bg-headings-buttons);
+  color: var(--sedan);
+}
+
+.suvs > a {
+  background-color: var(--bg-headings-buttons);
+  color: var(--suv);
+}
+
+.luxury > a {
+  background-color: var(--bg-headings-buttons);
+  color: var(--luxury);
+}
+
+/* Button Hover State */
+.sedan > a:hover {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+.suvs > a:hover {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+.luxury > a:hover {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+/* BREAKS */
+
+/*  Laptop 1024px */
+@media(max-width: 1024px) {
+  /* Layout */
+  body {
+    width: 100%;
+    height: 600px;
+    padding-top: 8rem;
+    font-size: 15px;
+    background-color: var(--bg-headings-buttons);
+  }
+  
+  .wrapper {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: solid thin var(--bg-headings-buttons);
+    border-radius: 9px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 550px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 500px;
+    padding-top: 1rem;
+    padding-left: 2.3rem;
+  }
+
+  /* Base Styles */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--bg-headings-buttons);
+  }
+  
+  p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    color: var(--paragraph);
+    line-height: 1.6;
+    margin-bottom: 4.5rem;
+  }
+  
+  a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 27px;
+  } 
+  
+  /* Image sizing */
+  .pic__size {
+    width: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Background-Color & Border-Radius */
+  .sedan {
+    border-radius: 15px 0 0 15px;
+    background: var(--sedan);
+  }
+  
+  .luxury {
+    border-radius: 0 15px 15px 0;
+    background: var(--luxury);
+  }
+  
+}
+
+/* Tablet 768px */
+@media(max-width: 768px) {
+  /* Layout */
+    body {
+    width: 100%;
+    height: 1300px;
+    padding-top: 4rem;
+    font-size: 15px;
+    background-color: var(--bg-headings-buttons);
+    }
+  
+    .wrapper {
+      width: 80%;
+      height: 1200px;
+      margin-left: 4rem;
+      justify-content: center;
+      align-items: center;
+      border: solid thin var(--bg-headings-buttons);
+      border-radius: 9px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1100px;
+      margin: auto;
+    }
+    
+    .card {
+      width: 100%;
+      height: 1100px;
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: auto;
+    } 
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(3, 1fr));  
+    }
+  
+    /* Base Styles */
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      font-family: 'Big Shoulders Display', sans-serif;
+      color: var(--bg-headings-buttons);
+    }
+    
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 1rem;
+      color: var(--paragraph);
+      text-align: left;
+      line-height: 1.75;
+      padding: 0 3rem;
+    }
+    
+    a {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 1.3rem;
+      text-align: center;
+      text-decoration: none;
+      padding: .9rem 0;
+      margin: 1.3rem 0;
+      border-radius: 27px;
+    }
+    
+    /* Image sizing */
+      .pic__size {
+      width: 6rem;
+    }
+    
+    /* Card Background-Color & Border-Radius */
+    .sedan {
+      border-radius: 12px 12px 0 0;
+      background: var(--sedan);
+    }
+    
+    .luxury {
+      border-radius: 0 0 12px 12px;
+      background: var(--luxury);
+    }
+    
+  }
+
+/* Large Mobile 425px */
+@media(max-width: 425px) {
+  /* Layout */
+    body {
+    width: 100%;
+    height: 800px;
+    padding-top: 6rem;
+    font-size: 15px;
+    background-color: var(--bg-headings-buttons);
+    }
+  
+    .wrapper {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      border: solid thin var(--bg-headings-buttons);
+      border-radius: 9px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 650px;
+    }
+    
+    .card {
+      width: 100%;
+      height: 600px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    /* Base Styles */
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 4rem;
+      font-family: 'Big Shoulders Display', sans-serif;
+      color: var(--bg-headings-buttons);
+    }
+    
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: .9rem;
+      color: var(--paragraph);
+      line-height: 1.8;
+    }
+    
+    a {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      padding: .6rem 1rem;
+      margin-bottom: 3rem;
+      border-radius: 27px;
+    }
+    
+    /* Image sizing */
+      .pic__size {
+      width: 5rem;
+    }
+    
+    /* Card Background-Color & Border-Radius */
+    .sedan {
+      border-radius: 12px 12px 0 0;
+      background: var(--sedan);
+    }
+    
+    .luxury {
+      border-radius: 0 0 12px 12px;
+      background: var(--luxury);
+    }
+    
+  }
+/* Medium Mobile 375px */
+@media(max-width: 375px) {
+  /* Layout */
+    body {
+    width: 100%;
+    height: 800px;
+    /* padding-top: 6rem; */
+    font-size: 15px;
+    background-color: var(--bg-headings-buttons);
+    }
+  
+    .wrapper {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      border: solid thin var(--bg-headings-buttons);
+      border-radius: 9px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 650px;
+    }
+    
+    .card {
+      width: 100%;
+      height: 600px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    /* Base Styles */
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      font-family: 'Big Shoulders Display', sans-serif;
+      color: var(--bg-headings-buttons);
+    }
+    
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: .9rem;
+      color: var(--paragraph);
+      line-height: 1.7;
+      margin-bottom: .5rem;
+    }
+    
+    a {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      padding: .6rem 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 27px;
+    }
+    
+    /* Image sizing */
+      .pic__size {
+      width: 5rem;
+      margin-bottom: 0;
+    }
+    
+    /* Card Background-Color & Border-Radius */
+    .sedan {
+      border-radius: 12px 12px 0 0;
+      background: var(--sedan);
+    }
+    
+    .luxury {
+      border-radius: 0 0 12px 12px;
+      background: var(--luxury);
+    }
+    
+  }
+
+/* Small Mobile 320px */
+@media(max-width: 320px) {
+  /* Layout */
+    body {
+    width: 100%;
+    height: 1200px;
+    padding-top: 6rem;
+    font-size: 15px;
+    background-color: var(--bg-headings-buttons);
+    }
+  
+    .wrapper {
+      width: 80%;
+      height: 1000px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      border: solid thin var(--bg-headings-buttons);
+      border-radius: 9px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1000px;
+    }
+    
+    .card {
+      width: 100%;
+      height: 900px;
+      padding-left: 2.5rem;
+      padding-right: 1rem;
+    }
+  
+    /* Base Styles */
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Big Shoulders Display', sans-serif;
+      color: var(--bg-headings-buttons);
+    }
+    
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: .8rem;
+      color: var(--paragraph);
+      line-height: 1.6;
+      padding-right: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    a {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: .7rem;
+      text-align: center;
+      text-decoration: none;
+      padding: .6rem 1rem;
+      border-radius: 27px;
+    }
+    
+    /* Image sizing */
+      .pic__size {
+      width: 3.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Card Background-Color & Border-Radius */
+    .sedan {
+      border-radius: 12px 12px 0 0;
+      background: var(--sedan);
+    }
+    
+    .luxury {
+      border-radius: 0 0 12px 12px;
+      background: var(--luxury);
+    }
+    
+  }
